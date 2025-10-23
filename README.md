@@ -1,4 +1,4 @@
-# London Borough of Waltham Forest Website
+# London Borough of Waltham Forest Website docs
 
 A Drupal 10 website built with LocalGov Drupal distribution and a custom reskin theme powered by Vite and Storybook.
 
@@ -12,11 +12,11 @@ A Drupal 10 website built with LocalGov Drupal distribution and a custom reskin 
   - [Theme Development](#theme-development)
   - [Available Scripts](#available-scripts)
   - [Linting and Code Quality](#linting-and-code-quality)
-  - [Search Filters](/web/modules/custom/lbwf_search/README.md)
+  - [Search Filters](docs/search/README.md)
 - [Project Structure](#project-structure)
 - [Testing](#testing)
 - [Deployment](#deployment)
-- [Entity share](/docs/enitiy-share/readme.md)
+- [Entity share](docs/entity-share/readme.md)
 - [Environment Configuration](#environment-configuration)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
@@ -515,6 +515,7 @@ ddev exec "chown -R www-data:www-data web/sites/default/files"
 - **Drupal Documentation:** https://www.drupal.org/docs
 - **Vite Documentation:** https://vitejs.dev/
 - **Storybook Documentation:** https://storybook.js.org/
+- **Upsun.com (formally Platform.sh):** https://devcenter.upsun.com/
 
 ## Contributing
 
