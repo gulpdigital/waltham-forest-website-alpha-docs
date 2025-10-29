@@ -333,13 +333,7 @@ The module uses the logger with the 'lbwf_search' log channel.
 
 ## Known Issues
 
-### Facet Preselection Bug
-
-Multiple topic terms in URL may result in only one being selected in the form. This is tracked in Playwright tests.
-
-### Filter Clearing Inconsistency
-
-The "Clear all" link and button may behave differently regarding whether they preserve the search query. This behavior needs clarification.
+TBC
 
 ## Maintenance
 
