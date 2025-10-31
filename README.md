@@ -26,7 +26,7 @@ A Drupal 10 website built with LocalGov Drupal distribution and a custom reskin 
 The London Borough of Waltham Forest public website is built on:
 
 - **Drupal 10** with the LocalGov Drupal distribution
-- **Custom Reskin Theme** (`lbwf_theme_reskin`) with modern frontend tooling
+- **Custom Reskin Theme** (`gd_civic_one`) with modern frontend tooling
 - **DDEV** for local development environment
 - **Platform.sh** for hosting and deployment
 
@@ -103,7 +103,7 @@ The London Borough of Waltham Forest public website is built on:
    ddev npm install
 
    # Theme dependencies and build
-   ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm install && npm run build"
+   ddev exec "cd web/themes/custom/gd_civic_one && npm install && npm run build"
    ```
 
 5. **Import database or install Drupal:**
@@ -126,13 +126,13 @@ The London Borough of Waltham Forest public website is built on:
 
 ### Theme Development
 
-The custom theme (`lbwf_theme_reskin`) uses modern frontend tooling:
+The custom theme (`gd_civic_one`) uses modern frontend tooling:
 
 #### Development Mode
 
 ```bash
 # Start theme development with live reloading
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run watch"
+ddev exec "cd web/themes/custom/gd_civic_one && npm run watch"
 ```
 
 This starts:
@@ -145,7 +145,7 @@ This starts:
 
 ```bash
 # Start Vite dev server with HMR
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run vite:dev"
+ddev exec "cd web/themes/custom/gd_civic_one && npm run vite:dev"
 ```
 
 Access at: https://waltham-forest-current-website.ddev.site:5173
@@ -154,7 +154,7 @@ Access at: https://waltham-forest-current-website.ddev.site:5173
 
 ```bash
 # Build and serve Storybook
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run storybook:build && npm run storybook:dev"
+ddev exec "cd web/themes/custom/gd_civic_one && npm run storybook:build && npm run storybook:dev"
 ```
 
 Access at: https://waltham-forest-current-website.ddev.site:6006
@@ -175,23 +175,23 @@ ddev npm run phpcbf           # Fix PHP code style issues
 
 ```bash
 # Build commands
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run build"     # Production build
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run watch"     # Development build + watch
+ddev exec "cd web/themes/custom/gd_civic_one && npm run build"     # Production build
+ddev exec "cd web/themes/custom/gd_civic_one && npm run watch"     # Development build + watch
 
 # Vite commands
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run vite:build"    # Build assets
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run vite:watch"    # Watch and rebuild
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run vite:dev"      # Dev server with HMR
+ddev exec "cd web/themes/custom/gd_civic_one && npm run vite:build"    # Build assets
+ddev exec "cd web/themes/custom/gd_civic_one && npm run vite:watch"    # Watch and rebuild
+ddev exec "cd web/themes/custom/gd_civic_one && npm run vite:dev"      # Dev server with HMR
 
 # Storybook commands
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run storybook:dev"   # Start Storybook dev server
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run storybook:build" # Build static Storybook
+ddev exec "cd web/themes/custom/gd_civic_one && npm run storybook:dev"   # Start Storybook dev server
+ddev exec "cd web/themes/custom/gd_civic_one && npm run storybook:build" # Build static Storybook
 
 # Linting and fixing
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run eslint"         # Check JS/TS files
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run eslint:fix"     # Fix JS/TS issues
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run stylelint"      # Check CSS/SCSS files
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run stylelint:fix"  # Fix CSS/SCSS issues
+ddev exec "cd web/themes/custom/gd_civic_one && npm run eslint"         # Check JS/TS files
+ddev exec "cd web/themes/custom/gd_civic_one && npm run eslint:fix"     # Fix JS/TS issues
+ddev exec "cd web/themes/custom/gd_civic_one && npm run stylelint"      # Check CSS/SCSS files
+ddev exec "cd web/themes/custom/gd_civic_one && npm run stylelint:fix"  # Fix CSS/SCSS issues
 ```
 
 ### Linting and Code Quality
@@ -208,12 +208,12 @@ The project uses pre-commit hooks to maintain code quality:
 
 ```bash
 # JavaScript/TypeScript
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run eslint"
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run eslint:fix"
+ddev exec "cd web/themes/custom/gd_civic_one && npm run eslint"
+ddev exec "cd web/themes/custom/gd_civic_one && npm run eslint:fix"
 
 # CSS/SCSS
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run stylelint"
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run stylelint:fix"
+ddev exec "cd web/themes/custom/gd_civic_one && npm run stylelint"
+ddev exec "cd web/themes/custom/gd_civic_one && npm run stylelint:fix"
 
 # PHP
 ddev composer phpcs        # Check PHP code standards
@@ -232,7 +232,7 @@ ddev composer phpcbf       # Fix PHP code standard violations
 ├── web/                           # Drupal web root
 │   ├── modules/custom/            # Custom Drupal modules
 │   ├── themes/custom/
-│   │   └── lbwf_theme_reskin/     # Main custom theme
+│   │   └── gd_civic_one/     # Main custom theme
 │   │       ├── components/        # Component files
 │   │       ├── src/              # Source SCSS/JS files
 │   │       ├── package.json      # Theme-specific dependencies
@@ -427,7 +427,7 @@ The site is deployed to Platform.sh with automatic builds:
 
 ```bash
 # Build theme for production
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run build"
+ddev exec "cd web/themes/custom/gd_civic_one && npm run build"
 
 # Clear Drupal caches
 ddev drush cr
@@ -477,10 +477,10 @@ ddev restart
 
 ```bash
 # Clear npm cache and reinstall
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && rm -rf node_modules package-lock.json && npm install"
+ddev exec "cd web/themes/custom/gd_civic_one && rm -rf node_modules package-lock.json && npm install"
 
 # Rebuild assets
-ddev exec "cd web/themes/custom/lbwf_theme_reskin && npm run build"
+ddev exec "cd web/themes/custom/gd_civic_one && npm run build"
 ```
 
 #### Database Connection Issues

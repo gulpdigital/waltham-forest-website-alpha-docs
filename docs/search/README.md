@@ -157,7 +157,7 @@ The module provides custom Twig templates:
 
 ### Form Alterations
 
-The module significantly alters the `generic_search` view's exposed form for the `lbwf_theme_reskin` theme:
+The module significantly alters the `generic_search` view's exposed form for the `gd_civic_one` theme:
 
 #### Search Bar Enhancements
 
@@ -242,7 +242,7 @@ Alters the Views exposed form for `generic_search` view:
 **Key Changes:**
 
 - Makes fulltext search required (with core patch)
-- Theme-specific alterations for `lbwf_theme_reskin`
+- Theme-specific alterations for `gd_civic_one`
 - Moves facets into collapsible filters container
 - Adds custom buttons and actions
 
@@ -279,11 +279,11 @@ Without this patch, required search fields will display validation errors on ini
 
 ### Theme Detection
 
-The module checks the active theme and applies specific alterations only for `lbwf_theme_reskin`:
+The module checks the active theme and applies specific alterations only for `gd_civic_one`:
 
 ```php
 $active_theme = \Drupal::service('theme.manager')->getActiveTheme()->getName();
-if ($active_theme === 'lbwf_theme_reskin') {
+if ($active_theme === 'gd_civic_one') {
   // Apply reskin-specific changes
 }
 ```
